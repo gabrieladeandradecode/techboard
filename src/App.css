@@ -5,11 +5,12 @@
 
 header {
   background-color: black;
+  padding: 32px;
   display: flex;
   justify-content: center;
 }
 
-section {
+.section-tech {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(#17DCB3);
@@ -17,4 +18,19 @@ section {
 
 section img {
   max-width: 90%;
+}
+
+.section-form {
+    background-color: black;
+
+}
+
+.form {
+    background-color: black;
+    color: white;
+    width: 384px;
+    max-width: 90%;
+    margin: 64px auto;
+    padding: 28px 32px;
+    border-radius: 16px;
 }

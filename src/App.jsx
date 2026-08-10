@@ -1,12 +1,34 @@
 import { useState } from 'react'
 import './App.css'
 
+function TituloFormulario({ children }){
+  return (
+    <h2>{ children }</h2>
+  )
+}
+
+function CampoDeFormulario({ children }){
+  return (
+    <fieldset>{ children }</fieldset>
+  )
+}
+
+function Label({ children, htmlFor }){
+  return (
+    <label htmlFor={'htmlFor'}>{ children }</label>
+  )
+}
+
 function Form() {
   return (
     <form action="" method="post" className='form'>
-      <h2>Preencha para criar um evento:</h2>
-      <fieldset>
-        <label htmlFor="nome">Qual o nome do evento?</label>
+      <TituloFormulario>
+        Preencha para criar um evento:
+      </TituloFormulario>
+      <CampoDeFormulario>
+        <Label htmlFor="nome">
+          Qual o nome do evento?
+        </Label>
         <input type="text" name="nome" placeholder='Summer dev hits' />
         
         <label htmlFor="">Data do evento</label>
@@ -19,7 +41,7 @@ function Form() {
           <option value=""></option>
         </select>
 
-      </fieldset>
+      </CampoDeFormulario>
     </form>
   );
 }

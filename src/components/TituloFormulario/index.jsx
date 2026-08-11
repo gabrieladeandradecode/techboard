@@ -1,5 +1,9 @@
+import './titulo-form.css'
+
 export function TituloFormulario({ children }){
   return (
-    <h2>{ children }</h2>
+    <h2 className="titulo-form">
+      { children }
+    </h2>
   )
 }

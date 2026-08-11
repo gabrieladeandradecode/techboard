@@ -1,3 +1,4 @@
+import './form.css' 
 import { TituloFormulario } from '../TituloFormulario'
 import { CampoDeFormulario } from '../CampoDeFormulario'
 import { CampoDeEntrada } from '../CampoDeEntrada'

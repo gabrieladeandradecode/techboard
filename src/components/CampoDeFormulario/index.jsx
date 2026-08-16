@@ -1,5 +1,7 @@
+import './fieldset.css'
+
 export function CampoDeFormulario({ children }){
   return (
-    <fieldset>{ children }</fieldset>
+    <fieldset className="fieldset">{ children }</fieldset>
   )
 }

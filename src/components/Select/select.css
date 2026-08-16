@@ -1,0 +1,12 @@
+.select {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    line-height: 120%;
+    color: #4A4949;
+    background-color: transparent;
+}
+
+/* .select:: {
+    color: #4A4949;
+} */

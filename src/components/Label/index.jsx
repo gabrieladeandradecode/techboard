@@ -1,5 +1,7 @@
+import './label-form.css'
+
 export function Label({ children, htmlFor }){
   return (
-    <label htmlFor={'htmlFor'}>{ children }</label>
+    <label className="label-form" htmlFor={'htmlFor'}>{ children }</label>
   )
 }

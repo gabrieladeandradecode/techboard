@@ -3,6 +3,8 @@ import { TituloFormulario } from '../TituloFormulario'
 import { CampoDeFormulario } from '../CampoDeFormulario'
 import { CampoDeEntrada } from '../CampoDeEntrada'
 import { Label } from '../Label'
+import { Select } from '../Select'
+import { Botao } from '../Botao'
 
 export function Form() {
   return (
@@ -21,17 +23,14 @@ export function Form() {
           placeholder="Summer dev hits"
         />
         
-        <Label htmlFor="">Data do evento</Label>
-        <CampoDeEntrada type="text" placeholder='XX/XX/XXXX' />
+        <Label htmlFor="data">Data do evento</Label>
+        <CampoDeEntrada type="text" name="data" placeholder='XX/XX/XXXX' />
         
         <Label htmlFor="tema">Tema do evento</Label>
-        <select name="temas" id="tema">
-          <option value="" disabled>Selecione uma opção..</option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
+        <Select name="temas" id="tema"></Select>         
 
       </CampoDeFormulario>
+      <Botao></Botao>
     </form>
   );
 }
